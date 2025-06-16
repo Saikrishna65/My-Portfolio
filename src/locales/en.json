@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "intro1": "I AM",
+    "intro2": "SAI KRISHNA",
+    "title": "COMPUTER SCIENCE STUDENT",
+    "desc": "I DESIGN AND DEVELOP WEBSITES\nFOR PEOPLE AND HELP BRING\nTHEIR IDEAS TO LIFE.",
+    "role1": "FULL STACK",
+    "role2": "DEVELOPER"
+  },
+  "about": {
+    "leftTop": "I craft websites\ndriven by creativity\nand commitment.",
+    "rightTop": "Building Skills That\nMake a Difference.",
+    "centerTitle": "CREATE",
+    "line1": "BEAUTIFUL",
+    "line2": "WEB SPACES",
+    "line3": "THAT ENGAGE",
+    "bottomRight": "An Aspiring Digital\nDesigner & Developer\nfrom India."
+  },
+  "aboutTextEffect": {
+    "lines": [
+      [
+        "•",
+        "A",
+        "PASSIONATE",
+        "FULL-STACK",
+        "WEB",
+        "DEVELOPER",
+        "WITH",
+        "FOCUS",
+        "ON",
+        "RESPONSIVE",
+        "APPLICATIONS."
+      ],
+      [
+        "•",
+        "CURRENTLY",
+        "PURSUING",
+        "INFORMATION",
+        "TECHNOLOGY",
+        "EAGER",
+        "TO",
+        "LEARN",
+        "AND",
+        "EXPERIMENT."
+      ],
+      [
+        "•",
+        "I",
+        "LOVE",
+        "CREATING",
+        "SMOOTH",
+        "ANIMATIONS",
+        "USING",
+        "GSAP",
+        "AND",
+        "FRAMER",
+        "MOTION",
+        "FOCUSED",
+        "ON",
+        "INTERACTIVE",
+        "AND",
+        "DYNAMIC",
+        "UIs."
+      ]
+    ]
+  },
+  "rotatingText": {
+    "text": ". FULL-STACK . DEVELOPER . FULL-STACK . DEVELOPER"
+  },
+
+  "skills": {
+    "heading": "WHAT I WORK WITH",
+    "javascript": "JavaScript",
+    "html": "HTML",
+    "css": "CSS",
+    "tailwind": "Tailwind CSS",
+    "react": "React",
+    "router": "React Router",
+    "responsive": "Responsive Design",
+    "gsap": "GSAP Animations",
+    "typescript": "TypeScript",
+    "node": "Node.js",
+    "express": "Express",
+    "mongodb": "MongoDB",
+    "rest": "RESTful APIs",
+    "socketio": "Socket.IO",
+    "git": "Git & GitHub",
+    "postman": "Postman"
+  }
+}

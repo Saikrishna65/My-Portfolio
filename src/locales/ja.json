@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "intro1": "私は",
+    "intro2": "サイ・クリシュナです",
+    "title": "コンピューターサイエンスの学生",
+    "desc": "私は人々のためにウェブサイトを設計・開発し、\n彼らのアイデアを形にする手助けをします。",
+    "role1": "フルスタック",
+    "role2": "開発者"
+  },
+  "about": {
+    "leftTop": "創造性と責任感に導かれた\nウェブサイトを作成します。",
+    "rightTop": "違いを生み出す\nスキルを構築中です。",
+    "centerTitle": "クリエイト",
+    "line1": "美しい",
+    "line2": "ウェブ空間",
+    "line3": "心を動かす",
+    "bottomRight": "インド出身の\n若きデジタルデザイナー &\n開発者です。"
+  },
+  "aboutTextEffect": {
+    "lines": [
+      [
+        "•",
+        "情熱的な",
+        "フルスタック",
+        "ウェブ",
+        "開発者",
+        "であり",
+        "レスポンシブ",
+        "アプリ",
+        "に",
+        "注力",
+        "しています。"
+      ],
+      [
+        "•",
+        "現在",
+        "情報技術を",
+        "専攻中で",
+        "学び",
+        "試す",
+        "ことに",
+        "意欲的です。"
+      ],
+      [
+        "•",
+        "GSAP",
+        "や",
+        "Framer",
+        "Motion",
+        "を使った",
+        "スムーズな",
+        "アニメーション",
+        "の",
+        "作成が",
+        "大好きです。",
+        "インタラクティブ",
+        "で",
+        "ダイナミック",
+        "なUI",
+        "に",
+        "注力しています。"
+      ]
+    ]
+  },
+  "rotatingText": {
+    "text": "・フルスタック・デベロッパー・ウェブ開発者・挑戦・成長・"
+  },
+  "skills": {
+    "heading": "使用技術",
+    "javascript": "JavaScript",
+    "html": "HTML",
+    "css": "CSS",
+    "tailwind": "Tailwind CSS",
+    "react": "React",
+    "router": "React Router",
+    "responsive": "レスポンシブデザイン",
+    "gsap": "GSAP アニメーション",
+    "typescript": "TypeScript",
+    "node": "Node.js",
+    "express": "Express",
+    "mongodb": "MongoDB",
+    "rest": "REST API",
+    "socketio": "Socket.IO",
+    "git": "Git & GitHub",
+    "postman": "Postman"
+  }
+}
