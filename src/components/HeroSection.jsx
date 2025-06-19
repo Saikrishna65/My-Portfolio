@@ -1,17 +1,19 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
+import ResumeButtons from "./ResumeModel";
 
-const HeroSection = () => {
+const HeroSection = ({ animationStart }) => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
 
-  const englishName = t("hero.intro2", { lng: "en" }); // SAI KRISHNA
+  const englishName = t("hero.intro2", { lng: "en" });
   const engChars = englishName.split("");
   const descText = t("hero.desc");
   const descChars = descText.split("");
 
-  const kanjiPool = [
+  const charPool = [
+    // Japanese Kanji
     "海",
     "雲",
     "星",
@@ -21,85 +23,128 @@ const HeroSection = () => {
     "光",
     "花",
     "桜",
-    "森",
-    "時",
-    "夢",
-    "空",
-    "風",
-    "心",
-    "愛",
-    "音",
-    "火",
-    "山",
-    "道",
+
+    // Korean Hangul
+    "한",
+    "글",
+    "세",
+    "종",
+    "문",
+    "자",
+
+    // Arabic
+    "س",
+    "ل",
+    "م",
+    "ح",
+    "ب",
+
+    // Hindi (Devanagari)
+    "क",
+    "ख",
+    "ग",
+    "घ",
+    "च",
+    "छ",
+
+    // Cyrillic (Russian)
+    "Д",
+    "Ж",
+    "И",
+    "Й",
+    "Л",
+    "Ф",
+
+    // Extended Latin (German, French, Spanish, Nordic)
+    "Æ",
+    "Ø",
+    "ß",
+    "Ç",
+    "Ñ",
+    "Å",
   ];
 
   const letterRefs = useRef([]);
+  const hasAnimated = useRef(false);
+  const manualSwitch = useRef(false);
+
+  // Track language switch
+  const previousLang = useRef(currentLang);
+  if (previousLang.current !== currentLang) {
+    if (previousLang.current === "ja" && currentLang === "en") {
+      manualSwitch.current = true;
+    }
+    previousLang.current = currentLang;
+  }
+
+  const shouldAnimate = currentLang === "en" && !manualSwitch.current;
+
+  const getRandomKanji = () =>
+    charPool[Math.floor(Math.random() * charPool.length)];
 
   useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
+    if (!animationStart || !shouldAnimate || hasAnimated.current) return;
+    hasAnimated.current = true;
+
+    const ctx = gsap.context(() => {
       letterRefs.current.forEach((span) => {
         if (span) span.textContent = "";
       });
 
-      if (currentLang === "en") {
-        const tl = gsap.timeline();
-        const kanji1Duration = 0.07;
-        const kanji2Duration = 0.07;
-        const finalCharDelay = 0.05;
+      const tl = gsap.timeline();
 
-        engChars.forEach((char, i) => {
-          const span = letterRefs.current[i];
-          if (!span) return;
+      const kanji1Duration = 0.07;
+      const kanji2Duration = 0.07;
+      const finalCharDelay = 0.05;
 
-          const timeOffset = i * 0.12;
+      engChars.forEach((char, i) => {
+        const span = letterRefs.current[i];
+        if (!span) return;
 
-          tl.call(
-            () => {
-              span.textContent = char === " " ? "\u00A0" : getRandomKanji();
-            },
-            null,
-            timeOffset
-          );
+        const timeOffset = i * 0.12;
 
-          tl.call(
-            () => {
-              if (char !== " ") span.textContent = getRandomKanji();
-            },
-            null,
-            timeOffset + kanji1Duration
-          );
+        tl.call(
+          () => {
+            span.textContent = char === " " ? "\u00A0" : getRandomKanji();
+          },
+          null,
+          timeOffset
+        );
 
-          tl.call(
-            () => {
-              span.textContent = char === " " ? "\u00A0" : char;
-            },
-            null,
-            timeOffset + kanji1Duration + kanji2Duration + finalCharDelay
-          );
-        });
+        tl.call(
+          () => {
+            if (char !== " ") span.textContent = getRandomKanji();
+          },
+          null,
+          timeOffset + kanji1Duration
+        );
 
-        descChars.forEach((char, j) => {
-          const idx = engChars.length + j;
-          const span = letterRefs.current[idx];
-          if (!span) return;
+        tl.call(
+          () => {
+            span.textContent = char === " " ? "\u00A0" : char;
+          },
+          null,
+          timeOffset + kanji1Duration + kanji2Duration + finalCharDelay
+        );
+      });
 
-          tl.call(
-            () => {
-              span.textContent = char;
-            },
-            null,
-            j * 0.03 + engChars.length * 0.12
-          );
-        });
-      }
+      descChars.forEach((char, j) => {
+        const idx = engChars.length + j;
+        const span = letterRefs.current[idx];
+        if (!span) return;
+
+        tl.call(
+          () => {
+            span.textContent = char;
+          },
+          null,
+          j * 0.03 + engChars.length * 0.12
+        );
+      });
     });
 
     return () => ctx.revert();
-  }, [currentLang, englishName, descText]);
-
-  const getRandomKanji = () =>
-    kanjiPool[Math.floor(Math.random() * kanjiPool.length)];
+  }, [animationStart, currentLang, shouldAnimate]);
 
   return (
     <div className="relative min-h-screen bg-black text-white">
@@ -132,12 +177,14 @@ const HeroSection = () => {
             }`}
           >
             {currentLang === "en"
-              ? engChars.map((_, i) => (
+              ? engChars.map((char, i) => (
                   <span
                     key={i}
                     ref={(el) => (letterRefs.current[i] = el)}
                     className="inline-block"
-                  />
+                  >
+                    {!shouldAnimate ? (char === " " ? "\u00A0" : char) : ""}
+                  </span>
                 ))
               : t("hero.intro2")}
           </h1>
@@ -147,19 +194,26 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute ml-5 lg:ml-12 bottom-72 md:bottom-40 lg:bottom-12 whitespace-pre-line">
-        {currentLang === "en" ? (
-          <h1 className="font-spacegrotesk">
-            {descChars.map((_, j) => (
-              <span
-                key={j + engChars.length}
-                ref={(el) => (letterRefs.current[engChars.length + j] = el)}
-              />
-            ))}
-          </h1>
-        ) : (
-          <h1 className="font-spacegrotesk">{t("hero.desc")}</h1>
-        )}
+      <div className="flex flex-col gap-2 absolute ml-5 lg:ml-12 bottom-72 lg:bottom-12 whitespace-pre-line">
+        <div>
+          {currentLang === "en" ? (
+            <h1 className="font-spacegrotesk">
+              {descChars.map((char, j) => (
+                <span
+                  key={j + engChars.length}
+                  ref={(el) => (letterRefs.current[engChars.length + j] = el)}
+                >
+                  {!shouldAnimate ? char : ""}
+                </span>
+              ))}
+            </h1>
+          ) : (
+            <h1 className="font-spacegrotesk">{t("hero.desc")}</h1>
+          )}
+        </div>
+        <div className="text-center">
+          <ResumeButtons />
+        </div>
       </div>
 
       <div className="absolute right-5 bottom-10 lg:bottom-1 flex flex-col items-end space-y-[-0.5rem]">

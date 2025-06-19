@@ -25,10 +25,12 @@
         "FULL-STACK",
         "WEB",
         "DEVELOPER",
-        "WITH",
-        "FOCUS",
-        "ON",
+        "DEDICATED",
+        "TO",
+        "BUILDING",
         "RESPONSIVE",
+        "AND",
+        "USER-CENTRIC",
         "APPLICATIONS."
       ],
       [
@@ -36,31 +38,30 @@
         "CURRENTLY",
         "PURSUING",
         "INFORMATION",
-        "TECHNOLOGY",
+        "TECHNOLOGY,",
+        "ALWAYS",
         "EAGER",
         "TO",
         "LEARN",
         "AND",
-        "EXPERIMENT."
+        "INNOVATE."
       ],
       [
         "•",
         "I",
         "LOVE",
-        "CREATING",
+        "BRINGING",
+        "INTERFACES",
+        "TO",
+        "LIFE",
+        "WITH",
         "SMOOTH",
         "ANIMATIONS",
         "USING",
         "GSAP",
         "AND",
         "FRAMER",
-        "MOTION",
-        "FOCUSED",
-        "ON",
-        "INTERACTIVE",
-        "AND",
-        "DYNAMIC",
-        "UIs."
+        "MOTION."
       ]
     ]
   },
@@ -86,5 +87,45 @@
     "socketio": "Socket.IO",
     "git": "Git & GitHub",
     "postman": "Postman"
+  },
+  "projects": {
+    "title": "WHAT I HAVE BUILT",
+    "chatApp": {
+      "title": "Real‑Time Chat App",
+      "description": "Interactive messaging platform with instant communication features.",
+      "features": [
+        "JWT authentication for secure user login/logout",
+        "Socket.IO‑powered real‑time messaging and presence",
+        "Typing indicators and read receipts for better UX",
+        "Persistent chat history stored in MongoDB",
+        "Group chat support with multiple participants",
+        "Responsive design for seamless mobile and desktop use",
+        "GSAP animations for smooth UI transitions"
+      ]
+    },
+    "bmwSite": {
+      "title": "BMW Showcase Website",
+      "description": "Custom-designed interactive car showcase with smooth scroll-triggered video playback.",
+      "features": [
+        "Unique layout using semantic & grid-based divs with custom IDs for specs display",
+        "Scroll-controlled car video: sticky section until playback completes, then scroll resumes",
+        "Custom CSS animations and transitions (no GSAP) for engaging visual effects",
+        "No authentication/login—pure focus on browsing and design experience",
+        "Optimized asset loading with video and image lazy-loading techniques"
+      ]
+    },
+    "foodOrder": {
+      "title": "College Food Order",
+      "description": "Full‑stack platform for students & vendors with smooth GSAP animations.",
+      "features": [
+        "Secure JWT login/signup for students & vendors",
+        "Dynamic menu browsing + cart management",
+        "Order placement & history (pending, confirmed, delivered)",
+        "Vendor dashboard for CRUD & status updates",
+        "GSAP-powered animations for engaging UI transitions",
+        "Responsive, mobile‑first design with lazy loading",
+        "Efficient state management using React Context API"
+      ]
+    }
   }
 }

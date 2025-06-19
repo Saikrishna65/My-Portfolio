@@ -80,7 +80,7 @@ export default function Sidebar() {
       <button
         ref={buttonRef}
         onClick={() => setOpen((prev) => !prev)}
-        className="fixed top-4 right-4 z-50 w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center focus:outline-none"
+        className="fixed top-4 right-4 z-50 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center focus:outline-none"
       >
         <span
           className={`absolute w-6 h-0.5 bg-black transition-transform duration-300 ${
