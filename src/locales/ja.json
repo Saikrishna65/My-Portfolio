@@ -7,6 +7,21 @@
     "role1": "フルスタック",
     "role2": "開発者"
   },
+  "nav": {
+    "home": "ホーム",
+    "about": "紹介",
+    "skills": "スキル",
+    "experience": "経験",
+    "certificates": "証明書",
+    "projects": "プロジェクト",
+    "contact": "お問い合わせ"
+  },
+
+  "resume": {
+    "view": "履歴書を見る",
+    "download": "PDFをダウンロード"
+  },
+
   "about": {
     "leftTop": "創造性と責任感に導かれた\nウェブサイトを作成します。",
     "rightTop": "違いを生み出す\nスキルを構築中です。",
@@ -53,6 +68,55 @@
   "rotatingText": {
     "text": "・フルスタック・デベロッパー・ウェブ開発者・挑戦・成長・"
   },
+  "experience": {
+    "title": "経験",
+    "entries": [
+      {
+        "title": "フルスタック開発インターン",
+        "company": "LabMentix",
+        "duration": "2025年6月〜現在",
+        "points": [
+          "MERNスタックを使用してフルスタックアプリを開発。",
+          "他部門と連携して高品質なソリューションを提供。",
+          "ReactとTailwind CSSを使用してレスポンシブUIを設計。"
+        ]
+      },
+      {
+        "title": "フロントエンド開発インターン",
+        "company": "CodeAlpha",
+        "duration": "2024年6月〜2024年7月",
+        "points": [
+          "HTML、CSS、JavaScriptを使用してレスポンシブレイアウトを作成。",
+          "SEOとWebパフォーマンスを改善。",
+          "UI/UX改善と新機能の実装を担当。"
+        ]
+      }
+    ]
+  },
+  "certificates": {
+    "title": "認定資格",
+    "items": [
+      {
+        "title": "Python Essentials-1",
+        "platform": "Ciscoネットワーキングアカデミー",
+        "date": "2025年3月",
+        "link": "https://drive.google.com/file/d/1ZK4i6Iz6U3LgvATTQ8iAra-Ecn1pm74m/view?usp=sharing"
+      },
+      {
+        "title": "データベース管理システム パート1",
+        "platform": "Infosis Springboard",
+        "date": "2024年3月",
+        "link": "https://drive.google.com/file/d/1FvTkQXd-zEVBFaoxqtAhpgX4yYLJ-elr/view"
+      },
+      {
+        "title": "Pythonを使用した機械学習",
+        "platform": "Infosis Springboard",
+        "date": "2025年3月",
+        "link": "https://drive.google.com/file/d/10XxD0w85khousfpaZRcaeBQeBZAMUvl0/view?usp=sharing"
+      }
+    ]
+  },
+
   "skills": {
     "heading": "使用技術",
     "javascript": "JavaScript",
@@ -61,8 +125,8 @@
     "tailwind": "Tailwind CSS",
     "react": "React",
     "router": "React Router",
-    "responsive": "レスポンシブデザイン",
-    "gsap": "GSAP アニメーション",
+    "responsive": "Responsive Design",
+    "gsap": "GSAP",
     "typescript": "TypeScript",
     "node": "Node.js",
     "express": "Express",
@@ -111,5 +175,15 @@
         "React Context APIによる効率的な状態管理"
       ]
     }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "message": "メッセージ",
+    "submit": "送信",
+    "sending": "送信中...",
+    "success": "メッセージが正常に送信されました！",
+    "error": "問題が発生しました。もう一度お試しください。"
   }
 }

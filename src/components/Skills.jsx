@@ -5,76 +5,64 @@ import { useTranslation } from "react-i18next";
 const skills = [
   {
     key: "javascript",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    image: "./images/javaScript.webp",
   },
   {
     key: "html",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    image: "./images/HTML.webp",
   },
   {
     key: "css",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    image: "./images/css.webp",
   },
   {
     key: "tailwind",
-    image: "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
+    image: "./images/tailwind.webp",
   },
   {
     key: "react",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    image: "./images/react.webp",
   },
   {
     key: "router",
-    image: "https://www.svgrepo.com/show/354262/react-router.svg",
+    image: "./images/router.webp",
   },
   {
     key: "responsive",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/024/407/598/non_2x/responsive-design-outline-icon-design-illustration-seo-and-web-symbol-on-white-background-eps-10-file-vector.jpg",
+    image: "./images/responsive.webp",
   },
   {
     key: "gsap",
-    image:
-      "https://images.seeklogo.com/logo-png/44/1/greensock-gsap-icon-logo-png_seeklogo-448110.png",
+    image: "./images/gsap.webp",
   },
   {
     key: "typescript",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    image: "./images/typeScript.webp",
   },
-  { key: "node", image: "https://icon.icepanel.io/Technology/svg/Node.js.svg" },
+  { key: "node", image: "./images/node.webp" },
   {
     key: "express",
-    image:
-      "https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=FFFFFF",
+    image: "./images/express.webp",
   },
   {
     key: "mongodb",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    image: "./images/mongoDB.webp",
   },
   {
     key: "rest",
-    image:
-      "https://img.icons8.com/external-flat-juicy-fish/60/external-api-coding-and-development-flat-flat-juicy-fish.png",
+    image: "./images/restAPI.webp",
   },
   {
     key: "socketio",
-    image:
-      "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_c13320392397522bb5c39454d240ebf0/socket-io.png",
+    image: "./images/socket.webp",
   },
   {
     key: "git",
-    image:
-      "https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=FFFFFF",
+    image: "./images/github.webp",
   },
   {
     key: "postman",
-    image: "https://icon.icepanel.io/Technology/svg/Postman.svg",
+    image: "./images/postman.webp",
   },
 ];
 
@@ -96,7 +84,7 @@ const Skills = () => {
   const itemsPerCol = isMobile ? 4 : 8;
 
   return (
-    <div className="h-[120vh] lg:h-screen bg-black text-white">
+    <div id="skills" className="h-[120vh] lg:h-screen bg-black text-white">
       <div className="text-4xl md:text-6xl lg:text-8xl pl-5 md:pl-20 pt-10 font-spacegrotesk">
         {t("skills.heading")}
       </div>

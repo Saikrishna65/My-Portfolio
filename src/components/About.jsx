@@ -8,6 +8,7 @@ const About = () => {
 
   return (
     <div
+      id="about"
       className={
         "h-screen sm:h-screen md:h-[200vh] bg-black text-white pt-20 " +
         "bg-[url('/human.webp')] bg-cover bg-top md:bg-center"

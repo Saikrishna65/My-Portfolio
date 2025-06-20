@@ -23,7 +23,6 @@ const HeroSection = ({ animationStart }) => {
     "光",
     "花",
     "桜",
-
     // Korean Hangul
     "한",
     "글",
@@ -31,14 +30,12 @@ const HeroSection = ({ animationStart }) => {
     "종",
     "문",
     "자",
-
     // Arabic
     "س",
     "ل",
     "م",
     "ح",
     "ب",
-
     // Hindi (Devanagari)
     "क",
     "ख",
@@ -46,7 +43,6 @@ const HeroSection = ({ animationStart }) => {
     "घ",
     "च",
     "छ",
-
     // Cyrillic (Russian)
     "Д",
     "Ж",
@@ -54,7 +50,6 @@ const HeroSection = ({ animationStart }) => {
     "Й",
     "Л",
     "Ф",
-
     // Extended Latin (German, French, Spanish, Nordic)
     "Æ",
     "Ø",
@@ -147,7 +142,7 @@ const HeroSection = ({ animationStart }) => {
   }, [animationStart, currentLang, shouldAnimate]);
 
   return (
-    <div className="relative min-h-screen bg-black text-white">
+    <div id="home" className="relative min-h-screen bg-black text-white">
       {/* Language Toggle */}
       <div className="fixed top-8 right-24 z-10">
         <button

@@ -7,6 +7,21 @@
     "role1": "FULL STACK",
     "role2": "DEVELOPER"
   },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "certificates": "Certificates",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "resume": {
+    "view": "View Resume",
+    "download": "Download PDF"
+  },
+
   "about": {
     "leftTop": "I craft websites\ndriven by creativity\nand commitment.",
     "rightTop": "Building Skills That\nMake a Difference.",
@@ -68,6 +83,55 @@
   "rotatingText": {
     "text": ". FULL-STACK . DEVELOPER . FULL-STACK . DEVELOPER"
   },
+  "experience": {
+    "title": "Experience",
+    "entries": [
+      {
+        "title": "Full Stack Developer Intern",
+        "company": "LabMentix",
+        "duration": "June 2025 – Present",
+        "points": [
+          "Developed full-stack applications using MERN stack.",
+          "Collaborated with cross-functional teams to deliver high-quality solutions.",
+          "Designed responsive UIs using React and Tailwind CSS."
+        ]
+      },
+      {
+        "title": "Frontend Developer Intern",
+        "company": "CodeAlpha",
+        "duration": "June 2024 – July 2024",
+        "points": [
+          "Created responsive layouts with HTML, CSS, and JavaScript.",
+          "Improved SEO and web performance across key pages.",
+          "Worked on UI/UX improvements and implemented new features."
+        ]
+      }
+    ]
+  },
+
+  "certificates": {
+    "title": "CERTIFICATIONS",
+    "items": [
+      {
+        "title": "Python Essential-1",
+        "platform": "Cisco Networking Academy",
+        "date": "Mar 2025",
+        "link": "https://drive.google.com/file/d/1ZK4i6Iz6U3LgvATTQ8iAra-Ecn1pm74m/view?usp=sharing"
+      },
+      {
+        "title": "Database Management System Part-1",
+        "platform": "Infosis Springboard",
+        "date": "Mar 2024",
+        "link": "https://drive.google.com/file/d/1FvTkQXd-zEVBFaoxqtAhpgX4yYLJ-elr/view"
+      },
+      {
+        "title": "Machine Learning using Python",
+        "platform": "Infosis Springboard",
+        "date": "Mar 2025",
+        "link": "https://drive.google.com/file/d/10XxD0w85khousfpaZRcaeBQeBZAMUvl0/view?usp=sharing"
+      }
+    ]
+  },
 
   "skills": {
     "heading": "WHAT I WORK WITH",
@@ -78,7 +142,7 @@
     "react": "React",
     "router": "React Router",
     "responsive": "Responsive Design",
-    "gsap": "GSAP Animations",
+    "gsap": "GSAP",
     "typescript": "TypeScript",
     "node": "Node.js",
     "express": "Express",
@@ -127,5 +191,15 @@
         "Efficient state management using React Context API"
       ]
     }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "error": "Something went wrong. Please try again."
   }
 }

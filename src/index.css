@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bungee&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bungee&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"); */
 
 /* Tailwind CSS should be imported AFTER other styles */
 @import "tailwindcss";
@@ -21,17 +21,16 @@ body::-webkit-scrollbar {
 }
 
 @layer utilities {
-  .font-anton {
+  /* .font-anton {
     font-family: "Anton", sans-serif;
   }
 
   .font-bebas {
     font-family: "Bebas Neue", sans-serif;
   }
-
   .font-bungee {
     font-family: "Bungee", cursive;
-  }
+  } */
 
   .font-spartan {
     font-family: "League Spartan", sans-serif;
@@ -41,13 +40,13 @@ body::-webkit-scrollbar {
     font-family: "Montserrat", sans-serif;
   }
 
-  .font-notosansjp {
+  /* .font-notosansjp {
     font-family: "Noto Sans JP", sans-serif;
   }
 
   .font-notosans {
     font-family: "Noto Sans", sans-serif;
-  }
+  } */
 
   .font-outfit {
     font-family: "Outfit", sans-serif;

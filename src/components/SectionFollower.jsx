@@ -54,17 +54,19 @@ const SectionFollower = ({ imageUrl, children }) => {
       </div>
 
       {/* Hover follower with background image */}
-      <div
+      <img
         ref={followerRef}
-        className="absolute w-24 h-24 pointer-events-none bg-cover bg-center"
+        src={imageUrl}
+        loading="lazy"
+        className="absolute w-24 h-24 pointer-events-none object-cover"
         style={{
-          backgroundImage: `url(${imageUrl})`,
-          opacity: 0,
           transform: "translate(-50%, -50%)",
           left: 0,
           top: 0,
           zIndex: 5,
+          opacity: 0,
         }}
+        alt=""
       />
     </div>
   );

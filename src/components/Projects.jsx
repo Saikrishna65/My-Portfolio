@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useTranslation } from "react-i18next";
+import LazyVideo from "./LazyVideo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -115,7 +116,10 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="relative bg-black text-white overflow-x-hidden">
+    <div
+      id="projects"
+      className="relative bg-black text-white overflow-x-hidden"
+    >
       <div className="text-4xl md:text-8xl pl-7 md:pl-20 py-10 font-spacegrotesk">
         {t("projects.title")}
       </div>
@@ -179,21 +183,26 @@ const Projects = () => {
           ref={rightBoxRef}
           className="w-1/2 -mr-4 rounded-[50px] bg-green-500 h-[95%] z-20 absolute right-1"
         >
-          <video
-            src="./food-order-video.mp4"
-            muted
-            autoPlay
-            loop
+          <LazyVideo
+            src="./videos/Food-Order-Video.mp4"
             className="w-full rounded-[50px] h-[100.1%] overflow-hidden object-cover absolute top-0 left-0"
           />
-          <video
+
+          <LazyVideo
             ref={overlayRef1}
-            src="./chat-app-video.mp4"
+            src="./videos/Chat-App-Video.mp4"
+            poster="/Chat-App.jpg"
+            className="w-full rounded-[50px] h-[100.1%] overflow-hidden object-cover absolute top-0 left-0 [clip-path:polygon(0_0%,100%_0%,100%_100%,0%_100%)]"
+          />
+
+          {/* <video
+            ref={overlayRef1}
+            src="./videos/Chat-App-Video.mp4"
             muted
             autoPlay
             loop
             className="w-full mx-0 rounded-[50px] h-[100.1%] overflow-hidden object-cover absolute top-0 left-0 [clip-path:polygon(0_0%,100%_0%,100%_100%,0%_100%)]"
-          />
+          /> */}
         </div>
 
         {/* Blue Box */}
@@ -294,11 +303,8 @@ const Projects = () => {
           ref={fourthBoxRef}
           className="w-1/2 mt-10 -mr-4 rounded-[50px] bg-[#f5f5f5] h-[95%] z-0 absolute right-1 translate-y-full"
         >
-          <video
-            src="./bmw-video.mp4"
-            muted
-            autoPlay
-            loop
+          <LazyVideo
+            src="./videos/Bmw-Video.mp4"
             className="w-full mx-0 rounded-[50px] h-[100.1%] overflow-hidden object-cover absolute top-0 left-0"
           />
         </div>

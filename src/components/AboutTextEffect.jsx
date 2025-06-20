@@ -90,7 +90,7 @@ const AboutTextEffect = () => {
   return (
     <div
       ref={containerRef}
-      className="absolute right-0 pt-20 pl-5 md:pl-0 w-full md:w-[60%] text-white overflow-hidden"
+      className="absolute right-0 pt-10 pl-5 md:pl-0 w-full md:w-[60%] text-white overflow-hidden"
     >
       <div className="flex flex-col gap-1 md:gap-4">
         {lines.map((line, lineIndex) => (
