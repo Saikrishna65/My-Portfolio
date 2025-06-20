@@ -10,7 +10,7 @@ const About = () => {
     <div
       id="about"
       className={
-        "h-screen sm:h-screen md:h-[200vh] bg-black text-white pt-20 " +
+        "h-[750px] md:h-[200vh] bg-black text-white pt-20 " +
         "bg-[url('/human.webp')] bg-cover bg-top md:bg-center"
       }
     >
@@ -27,15 +27,15 @@ const About = () => {
           </div>
         </div>
 
-        <div className="block lg:hidden font-spacegrotesk text-5xl md:text-8xl text-center">
+        <div className="block lg:hidden font-spacegrotesk text-6xl md:text-8xl text-center">
           {t("about.centerTitle")}
         </div>
 
         <div>
-          <div className="font-spacegrotesk text-5xl md:text-8xl lg:text-[8rem] text-center lg:text-start">
+          <div className="font-spacegrotesk text-6xl md:text-8xl lg:text-[8rem] text-center lg:text-start">
             {t("about.line1")}
           </div>
-          <div className="font-spacegrotesk text-5xl md:text-8xl lg:text-[8rem] text-center lg:text-end">
+          <div className="font-spacegrotesk text-6xl md:text-8xl lg:text-[8rem] text-center lg:text-end">
             {t("about.line2")}
           </div>
         </div>
@@ -49,7 +49,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="block lg:hidden font-spacegrotesk text-5xl md:text-8xl text-center">
+        <div className="block lg:hidden font-spacegrotesk text-6xl md:text-8xl text-center">
           {t("about.line3")}
         </div>
       </div>

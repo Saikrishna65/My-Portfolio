@@ -189,7 +189,7 @@ const HeroSection = ({ animationStart }) => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 absolute ml-5 lg:ml-12 bottom-72 lg:bottom-12 whitespace-pre-line">
+      <div className="flex flex-col gap-2 absolute ml-5 lg:ml-12 bottom-1/3 lg:bottom-12 whitespace-pre-line">
         <div>
           {currentLang === "en" ? (
             <h1 className="font-spacegrotesk">
@@ -211,7 +211,7 @@ const HeroSection = ({ animationStart }) => {
         </div>
       </div>
 
-      <div className="absolute right-5 bottom-10 lg:bottom-1 flex flex-col items-end space-y-[-0.5rem]">
+      <div className="absolute right-5 bottom-20 lg:bottom-1 flex flex-col items-end space-y-[-0.5rem]">
         <h1 className="text-5xl md:text-8xl lg:text-9xl font-spacegrotesk leading-none">
           {t("hero.role1")}
         </h1>

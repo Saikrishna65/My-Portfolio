@@ -84,7 +84,7 @@ const Skills = () => {
   const itemsPerCol = isMobile ? 4 : 8;
 
   return (
-    <div id="skills" className="h-[120vh] lg:h-screen bg-black text-white">
+    <div id="skills" className="h-[750px] lg:h-screen bg-black text-white">
       <div className="text-4xl md:text-6xl lg:text-8xl pl-5 md:pl-20 pt-10 font-spacegrotesk">
         {t("skills.heading")}
       </div>
