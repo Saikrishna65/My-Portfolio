@@ -56,3 +56,18 @@ body::-webkit-scrollbar {
     font-family: "Space Grotesk", sans-serif;
   }
 }
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  animation: marquee linear infinite;
+  will-change: transform;
+}

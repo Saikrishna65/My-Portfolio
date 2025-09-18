@@ -201,5 +201,28 @@
     "sending": "Sending...",
     "success": "Your message has been sent successfully!",
     "error": "Something went wrong. Please try again."
+  },
+
+  "marquee": {
+    "tech": {
+      "react": "React",
+      "javascript": "JavaScript",
+      "tailwind": "Tailwind CSS",
+      "html": "HTML",
+      "node": "Node.js",
+      "express": "Express",
+      "mongodb": "MongoDB",
+      "socketio": "Socket.IO"
+    },
+    "roles": {
+      "fullstack": "Full-stack",
+      "frontend": "Front-end",
+      "backend": "Back-end"
+    },
+    "contact": {
+      "getInTouch": "Get in Touch",
+      "letsConnect": "Let's Connect",
+      "contactMe": "Contact Me"
+    }
   }
 }

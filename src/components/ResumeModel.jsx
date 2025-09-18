@@ -11,7 +11,7 @@ const ResumeButtons = () => {
         href="/Sai_Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+        className="bg-[#00CAFF] text-black font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
       >
         {t("resume.view")}
       </a>

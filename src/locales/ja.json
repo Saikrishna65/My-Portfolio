@@ -185,5 +185,27 @@
     "sending": "送信中...",
     "success": "メッセージが正常に送信されました！",
     "error": "問題が発生しました。もう一度お試しください。"
+  },
+  "marquee": {
+    "tech": {
+      "react": "リアクト",
+      "javascript": "ジャバスクリプト",
+      "tailwind": "テイルウィンド",
+      "html": "エイチティーエムエル",
+      "node": "ノードジェイエス",
+      "express": "エクスプレス",
+      "mongodb": "モンゴデービー",
+      "socketio": "ソケットアイオー"
+    },
+    "roles": {
+      "fullstack": "フルスタック",
+      "frontend": "フロントエンド",
+      "backend": "バックエンド"
+    },
+    "contact": {
+      "getInTouch": "お問い合わせ",
+      "letsConnect": "つながろう",
+      "contactMe": "連絡してね"
+    }
   }
 }
